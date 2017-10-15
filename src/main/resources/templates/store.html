@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css"></link>
+
+<!-- Compiled and minified JavaScript -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+<title>Store UI</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col s2">&nbsp;</div>
+			<div class="col s8">
+
+
+				<div class="card blue">
+					<div class="card-content white-text">
+						<div class="card-title">Store Details</div>
+					</div>
+					<div class="card-content white">
+						<table class="bordered">
+							<tbody>
+								<tr>
+									<td><b>Name:</b></td>
+									<td th:text="${store.stNum}"></td>
+								</tr>
+								<tr>
+									<td><b>Description:</b></td>
+									<td th:text="${store.stAddr}"></td>
+								</tr>
+								<tr>
+									<td><b>price:</b></td>
+									<td th:text="${store.stCity}"></td>
+								</tr>
+								<tr>
+									<td><b>coupon:</b></td>
+									<td th:text="${store.stState}"></td>
+								</tr>
+								<tr>
+									<td><b>coupon:</b></td>
+									<td th:text="${store.stZip}"></td>
+								</tr>
+								
+								<!-- <tr>
+									<td>&nbsp;</td>
+									<td align="center"><img th:src="@{${store.imageURL}}"/></td>
+								</tr>
+								<tr>
+									<td style="vertical-align: top;"><b>Details:</b></td>
+									<td th:text="${store.details}"></td>
+								</tr>
+								<tr>
+									<td style="vertical-align: top;"><b>Ingredients:</b></td>
+									<td th:text="${store.ingredients}"></td>
+								</tr>
+								 -->
+								<!-- <tr>
+									<td>Frontend Host IP</td>
+									<td th:text="${store.frontendIP}"></td>
+								</tr>
+								<tr>
+									<td>Backend Host IP</td>
+									<td th:text="${store.backendIP}"></td>
+								</tr> -->
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="col s2">&nbsp;</div>
+		</div>
+	</div>
+</body>
+</html>
